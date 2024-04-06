@@ -1,0 +1,279 @@
+@import "../scss/medias";
+
+.annonceDetailContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 1240px;
+  width: 100%;
+  gap: 30px;
+  flex: 1;
+  margin-bottom: 50px;
+
+  @include dt {
+    padding: 0 25px;
+  }
+
+  .slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 415px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    overflow: hidden;
+
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slideBtnCount {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      flex: 1;
+
+      .divVide {
+        flex: 1;
+      }
+
+      .slideBtn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex: 1;
+
+        button {
+          background-color: transparent;
+          border: none;
+          font-size: 5rem;
+          color: white;
+          padding: 0;
+          margin: 0;
+          cursor: pointer;
+        }
+      }
+
+      .spanCount {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        flex: 1;
+
+        span {
+          display: flex;
+          justify-content: center;
+          color: white;
+          font-size: 1.1rem;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  .villePersonne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include sm {
+      flex-direction: column;
+    }
+
+    .ville {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 15px;
+      flex: 1;
+
+      h2 {
+        color: #ff6060;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      p {
+        color: black;
+        font-size: 1.125rem;
+        margin: 0;
+      }
+      .tagSpan {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        height: auto;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ff6060;
+          border-radius: 10px;
+          color: white;
+          font-weight: 600;
+          padding: 7px 25px;
+        }
+      }
+    }
+
+    .personne {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      flex: 1;
+
+      @include sm {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+
+      .nom {
+        display: flex;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+
+        h3 {
+          color: #ff6060;
+          font-size: 1.125rem;
+          font-weight: 500;
+        }
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          border: 2px solid #cecece;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .stars {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+
+        gap: 10px;
+
+        span {
+          font-size: 2rem;
+        }
+
+        .star {
+          color: gray;
+        }
+
+        .star.filled {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .accordions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1240px;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+
+    @include sm {
+      flex-direction: column;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+      flex: 1;
+
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #ff6060;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding: 7px 15px;
+      }
+
+      p {
+        color: black;
+        padding: 0 30px;
+      }
+    }
+
+    .equipments {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+      flex: 1;
+
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #ff6060;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding: 7px 15px;
+      }
+
+      ul {
+        color: black;
+        padding: 10px 30px;
+        margin: 0;
+
+        li {
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate.open {
+  transform: rotate(0deg);
+}
+
+.rotate.close {
+  transform: rotate(180deg);
+}

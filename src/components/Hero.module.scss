@@ -1,0 +1,54 @@
+@import "../scss/medias";
+
+.hero {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+
+  @include dt {
+    padding: 0 25px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 223px;
+    overflow: hidden;
+    border-radius: 25px;
+
+    img {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .aproposImage {
+      filter: brightness(60%);
+    }
+
+    .defaultImage {
+      filter: brightness(30%);
+    }
+
+    h1 {
+      position: absolute;
+      color: white;
+      font-size: 3em;
+      padding: 25px;
+      z-index: 2;
+
+      @include dt {
+        padding: 0 50px;
+      }
+    }
+  }
+}

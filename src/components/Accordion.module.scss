@@ -1,0 +1,56 @@
+@import "../scss/medias";
+
+.accordionsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1240px;
+  width: 100%;
+  margin-top: 50px;
+  padding: 70px;
+
+  @include dt {
+    padding: 0 25px;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 1024px;
+  width: 100%;
+  gap: 10px;
+
+  h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 15px;
+    background-color: #ff6060;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+  }
+
+  P {
+    color: black;
+    font-size: 1.1rem;
+    padding: 0 50px;
+  }
+}
+
+.rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate.open {
+  transform: rotate(0deg);
+}
+
+.rotate.close {
+  transform: rotate(180deg);
+}
