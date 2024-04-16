@@ -121,6 +121,7 @@
       }
       .tagSpan {
         display: flex;
+        flex-wrap: wrap;
         gap: 15px;
         width: 100%;
         height: auto;
@@ -139,6 +140,10 @@
           color: white;
           font-weight: 600;
           padding: 7px 25px;
+
+          @include sm {
+            font-size: 11px;
+          }
         }
       }
     }
