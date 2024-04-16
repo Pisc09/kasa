@@ -1,3 +1,5 @@
+$res: calc(0.01 * 10vmin);
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -13,7 +15,7 @@
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 24 * $res;
     font-weight: 500;
     margin: 0;
   }
