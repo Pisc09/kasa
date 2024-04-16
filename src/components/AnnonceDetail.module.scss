@@ -147,6 +147,7 @@
       @include sm {
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: center;
       }
 
       .nom {
@@ -174,6 +175,10 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
+
+        @include sm {
+          justify-content: center;
+        }
 
         gap: 10px;
 
