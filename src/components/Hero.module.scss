@@ -1,5 +1,7 @@
 @import "../scss/medias";
 
+$res: calc(0.01 * 10vmin);
+
 .hero {
   max-width: 1240px;
   width: 100%;
@@ -42,7 +44,7 @@
     h1 {
       position: absolute;
       color: white;
-      font-size: 3em;
+      font-size: 64 * $res;
       padding: 25px;
       z-index: 2;
 
