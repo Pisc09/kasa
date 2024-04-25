@@ -3,7 +3,7 @@ import styles from "./Content.module.scss";
 import Hero from "./Hero";
 import Annonces from "./Annonces";
 import Accordion from "./Accordion";
-import Error from "../Error";
+import Error from "../pages/Error";
 
 function Content({ image, texte }) {
   const location = useLocation();

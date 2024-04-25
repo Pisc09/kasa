@@ -1,6 +1,6 @@
-import Content from "./components/Content";
+import Content from "../components/Content";
 import styles from "./Apropos.module.scss";
-import mga from "./images/img-hero-a-propos.png";
+import mga from "../images/img-hero-a-propos.png";
 
 function Apropos() {
   return (

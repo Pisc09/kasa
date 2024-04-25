@@ -1,6 +1,6 @@
-import Content from "./components/Content";
+import Content from "../components/Content";
 import styles from "./App.module.scss";
-import mg from "./images/img-hero-home.png";
+import mg from "../images/img-hero-home.png";
 
 function App() {
   return (

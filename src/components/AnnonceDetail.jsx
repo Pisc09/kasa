@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import Error from "../Error";
+import Error from "../pages/Error";
 import annonces from "../annonces.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

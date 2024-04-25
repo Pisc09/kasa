@@ -1,4 +1,4 @@
-import AnnonceDetail from "./components/AnnonceDetail";
+import AnnonceDetail from "../components/AnnonceDetail";
 import styles from "./AnnoncesDetails.module.scss";
 
 function AnnoncesDetails() {
